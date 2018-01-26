@@ -7,9 +7,9 @@ class Cartes:
         self.couleur = coul
 
     def validation(self, val, coul):
-        if val < 0 or val > 14:
+        if val > 0 or val < 14:
             raise Exception("La valeur est comprise entre 0 et 14")
-        if coul < 0 or coul > 4:
+        if coul > 0 or coul < 4:
             raise Exception("La couleur est comprise entre 0 et 3")
 
     def __str__(self):
